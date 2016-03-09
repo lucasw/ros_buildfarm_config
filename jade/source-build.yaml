@@ -7,11 +7,11 @@ jenkins_pull_request_job_priority: 60
 notifications:
   committers: false
   emails:
-  - ros-buildfarm-testfarm@googlegroups.com
+  - ros-buildfarm-testfarm@localhost
   maintainers: false
 repositories:
   urls:
-  - http://54.183.65.232/ubuntu/testing
+  - http://custom-repo/ubuntu/testing
   keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----

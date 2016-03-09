@@ -8,7 +8,7 @@ jenkins_source_job_priority: 80
 jenkins_source_job_timeout: 30
 notifications:
   emails:
-  - ros-buildfarm-testfarm@googlegroups.com
+  - ros-buildfarm-testfarm@localhost
   maintainers: false
 package_blacklist:
   - ardrone_autonomy
@@ -90,8 +90,8 @@ repositories:
     =E8ot
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://54.183.65.232/ubuntu/building
-target_repository: http://54.183.65.232/ubuntu/building
+  - http://custom-repo/ubuntu/building
+target_repository: http://custom-repo/ubuntu/building
 targets:
   ubuntu:
     trusty:

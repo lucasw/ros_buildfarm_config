@@ -1,14 +1,14 @@
 %YAML 1.1
 # ROS buildfarm doc-build file
 ---
-canonical_base_url: http://54.183.65.232/docs
+canonical_base_url: http://custom-repo/docs
 documentation_type: rosdoc_lite
 jenkins_job_priority: 91
 jenkins_job_timeout: 120
 notifications:
   committers: false
   emails:
-  - ros-buildfarm-testfarm@googlegroups.com
+  - ros-buildfarm-testfarm@localhost
   maintainers: false
 repositories:
   keys:
@@ -44,7 +44,7 @@ repositories:
     =E8ot
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://54.183.65.232/ubuntu/testing
+  - http://custom-repo/ubuntu/testing
 targets:
   ubuntu:
     trusty:

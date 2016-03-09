@@ -2,6 +2,8 @@
 # ROS buildfarm doc-build file
 ---
 documentation_type: make_target
+# TODO(lucasw) do I need any of these?
+# Can I comment all of them out and doc_repositories with it?
 doc_repositories:
 - https://github.com/ros-infrastructure/catkin_pkg.git
 - https://github.com/ros-infrastructure/jenkins_tools.git
@@ -15,14 +17,15 @@ jenkins_job_priority: 90
 jenkins_job_timeout: 30
 notifications:
   emails:
-  - ros-buildfarm-testfarm@googlegroups.com
+  # have this go nowhere for now
+  -  ros-buildfarm-testfarm@localhost
 targets:
   ubuntu:
     trusty:
       amd64:
 type: doc-build
 upload_credential_id: 1e7d4696-7fd4-4bc6-8c87-ebc7b6ce16e5
-upload_host: repo
+upload_host: custom-repo
 upload_root: /var/repos/docs
 upload_user: jenkins-slave
 version: 2
